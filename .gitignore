@@ -1,0 +1,6 @@
+# service_key
+.env
+
+# cache_file
+*.pyc
+__pychach__/
