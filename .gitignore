@@ -4,3 +4,5 @@
 # cache_file
 *.pyc
 __pychach__/
+
+.editorconfig
