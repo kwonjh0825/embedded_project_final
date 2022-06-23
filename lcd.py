@@ -18,9 +18,9 @@ lcd = LCD.Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_c
 
 def lcdprint(weather_state, weather_tmp) :
     lcd.set_cursor(0, 0)
-    lcd.message(f"today: {weather_state} / {weather_tmp}")
+    lcd.message(f"today:{weather_state}/{weather_tmp}")
     
 async def lcdtimer(t):
     lcd.set_cursor(0, 1)
     lcd.message(t)
-    await asyncio.sleep(60)
+    await asyncio.sleep(30)
