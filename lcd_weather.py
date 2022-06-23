@@ -16,4 +16,4 @@ async def lcd_weather():
     else :
         hot_led_off()
     
-    await asyncio.sleep(60)
+    await asyncio.sleep(60 * 60 * 3)            # 3시간에 한번 날씨를 불러옴
