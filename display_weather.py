@@ -3,7 +3,7 @@ from lcd import lcdprint
 import asyncio
 from led import hot_led_off, hot_led_on, rain_led_off, rain_led_on
 
-async def lcd_weather():
+async def display_weather():
     weather_cond, weather_tmp = weather()
     
     lcdprint(weather_cond, weather_tmp)
